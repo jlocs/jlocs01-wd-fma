@@ -1,0 +1,41 @@
+{
+"$schema": "http://json-schema.org/draft-04/schema#",
+"title": "Weather",
+"description": "Current weather in UK cities",
+"type": "object",
+"properties" : {
+	"cities" : {
+		"type" : "array", 
+		"items" : {
+			"type" : "object",
+			"properties" : {
+				"cityId" : {
+					"type" : "number", "minimum" : 0
+                	},
+				"cityName" : {
+					"type" : "string"
+                	},
+				"currentConditions" : {
+					"type" : "string", 
+					"ENUM" : ["Cloud", "Hail", "Heavy cloud", "Heavy rain", "Rain", "Sleet", "Snow", "Sun and cloud", "Sun"]
+                	},
+				"temperature" : {
+					"type" : "number",
+					"minimum" : -100,
+					"maximum" : 100
+                	}, 
+				"windSpeed" : {
+					"type" : "number", 
+					"minimum" : 0
+                	},
+				"windDirection" : {
+					"type" : "string", 
+					"ENUM" : ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]
+                	},
+				"windChillFactor" :  {"type" : "number", "minimum" : 0}
+            	},
+			"required" : ["cityId", "CityName", "currentConditions", "temperature", "windSpeed", "windDirection", "windChillFactor"]
+			}
+		}
+	}
+}

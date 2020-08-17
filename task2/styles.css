@@ -1,0 +1,30 @@
+body {
+    background: rgb(2,0,36);
+    font-family: 'Fira Sans', sans-serif;
+    color: #fff;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#red_alert {
+    color: #8b0000;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,31 @@
+{
+"cities" : [
+		{
+	"cityId" : 0,
+	"cityName" : "Aberdeen",
+	"currentConditions" : "Snow",
+	"temperature" : -10,
+	"windSpeed" : 15,
+	"windDirection" : "NW",
+	"windChillFactor" :  10
+		},
+		{
+	"cityId" : 1,
+	"cityName" : "Belfast",
+	"currentConditions" : "Rain",
+	"temperature" : 5,
+	"windSpeed" : 10,
+	"windDirection" : "SE",
+	"windChillFactor" :  5
+		},
+		{
+	"cityId" : 2,
+	"cityName" : "Canterbury",
+	"currentConditions" : "Sun",
+	"temperature" : 20,
+	"windSpeed" : 5,
+	"windDirection" : "S",
+	"windChillFactor" :  0
+		}
+	]
+}
